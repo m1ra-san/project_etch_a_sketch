@@ -1,14 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Luckiest+Guy&family=Pixelify+Sans:wght@400..700&display=swap');
+
 * {
     /* outline: 2px solid red; */
     margin: 0;
     padding: 0;
 }
 
+h1 {
+    font-family: "Luckiest Guy", cursive;
+    text-align: center;
+    letter-spacing: 2.2px;
+    font-size: 100px;
+    color: #d63b1c;
+    text-shadow: #185cee 3px 3px 0,
+    2px 2px 0 #ffbebe,
+   -1px -1px 0 #800;
+}
+
 
 
 .container {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     column-gap: 20px;
@@ -20,15 +33,63 @@
     height: 600px;
     display: grid;
     grid-template-columns: repeat(0, 1fr);
-    grid-template-rows:repeat(0, 1fr);
-    outline:2px solid gray;
+    grid-template-rows: repeat(0, 1fr);
+    outline: 2px solid rgb(255, 154, 108);
 }
 
 .canvas div {
-    background-color: grey;
-    align-items:baseline;
+    background-color: rgb(255, 250, 244);
+    align-items: baseline;
 }
 
-.canvas div:hover{
-    background-color: red;
+.tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 20%;
+    width: auto;
+    background-color:#ff9a6c;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:
+      0px 0px 0px 3px #d63b1c,
+      inset -10px 0px 5px -10px #fff5f3,
+  	  inset 0px 10px 5px -8px #fff5f3,
+  	  inset 20px 0px 20px -8px rgba(252, 78, 78, 0.522),
+  	  inset 0px -20px 20px -8px rgba(252, 78, 78, 0.522);
+}
+
+
+.tools input{
+    border: 2px solid #e38888;
+    border-radius: 5px;
+    max-width:50px;
+    padding: 0;
+    cursor: pointer;
+    background-color: #ffeadf;
+}
+
+.tools select{
+    border: 2px solid #e38888;
+    border-radius: 5px;
+    max-width:100%;
+    padding: 0;
+    cursor: pointer;
+    background-color: #ffeadf;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.prismatic {
+    width: 100%;
+    height: 20%;
+    background: #ff0000;
+    background: linear-gradient(148deg, rgba(255, 0, 0, 1) 0%, rgba(255, 233, 66, 1) 17%, rgb(75, 255, 10) 50%, rgba(15, 63, 255, 1) 79%, rgba(237, 83, 163, 1) 100%);
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.active-mode {
+    border: 5px solid rgb(75, 255, 10);
 }

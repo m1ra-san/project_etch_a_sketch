@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecth a Sketch</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
+
 <body>
+
+    <h1>Ecth and Sketch</h1>
     <div class="container">
         <div class="canvas">
-            
         </div>
-        <select class="size-selector" name="size_pixel" id="size_pixel">
-            <option value="16">16x16</option>
-            <option value="32">32x32</option>
-            <option value="64">64x64</option>
-            <option value="128">128x128</option>
-        </select>
+        <div class="tools">
+            <select class="size-selector" name="size_pixel" id="size_pixel">
+                <option value="16">16x16</option>
+                <option value="32">32x32</option>
+                <option value="64">64x64</option>
+                <option value="128">128x128</option>
+            </select>
+            <div><input type="color" id="colorPicker"></div>
+            <div id="prismaticColor" class="prismatic"></div>
+        </div>
+
+
     </div>
-    
+
 </body>
- <script src="script.js"></script>
+<script src="script.js"></script>
+
 </html>
